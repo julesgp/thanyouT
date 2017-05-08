@@ -1,13 +1,14 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
+var thanksApp = {};
 
-class App extends React.Component {
-    render() {
-        return (
-            <div>
-               <h1 className="titulo">It is working!</h1>
-            </div>
-        )
-    }
+thanksApp.animationProcess = function(){
+	$(".mainAnimation").delay(1500).fadeOut();
+	$(".thankyou").delay(2000).fadeIn();
 }
-ReactDOM.render(<App />, document.getElementById('app'));
+
+thanksApp.init = function(){
+	thanksApp.animationProcess();
+}
+
+$(function(){
+	thanksApp.init();
+});

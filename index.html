@@ -2,31 +2,54 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Thank You!</title>
+	<title>Thank You, Telus Digital!</title>
 	<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700|VT323" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="./public/frogger.css" rel="stylesheet"/>
 	<link href="./public/style.css" rel="stylesheet"/>
 </head>
 
 <body>
-	<section class="game">
-		<div class="mainContainer">
-			<h1>Welcome to Jules' MineSweeper</h1>
-			<p>control+command+spacebar</p>
-			<div class="gameContainer">
-				<div class="header">
-					<div class="score"><img src="public/images/left.png" alt="Image of Score"></div>
-					<div class="smile">🙂</div>
-					<div class="time"><img src="public/images/right.png" alt="Image of time"></div>
-				</div>
-				<div class="mainGame">
-				</div>
-			</div>
+	<section class="mainAnimation">
+		<div class="note">
+			<h1 class="frg-headline-font-59px thanks animated fadeInDown">Thank You!</h1>
+			<img
+			sizes="(max-width: 300px) 100vw, 300px"
+			srcset="
+			telusDigital_gsgv8t_c_scale,w_200.png 200w,
+			telusDigital_gsgv8t_c_scale,w_508.png 508w"
+			src="telusDigital_gsgv8t_c_scale,w_508.png"
+			alt="Telus Logo">
 		</div>
-	</section>
-	<section class="message">
 		
-	</section>
+	</section> <!-- End of mainAnimation -->
+
+	<section class="thankyou">
+		<div class="teamImage">
+			<img
+			sizes="(max-width: 550px) 100vw, 550px"
+			srcset="
+			team_bjhsxy_c_scale,w_140.png 140w,
+			team_bjhsxy_c_scale,w_271.png 271w,
+			team_bjhsxy_c_scale,w_371.png 371w,
+			team_bjhsxy_c_scale,w_459.png 459w,
+			team_bjhsxy_c_scale,w_539.png 539w,
+			team_bjhsxy_c_scale,w_612.png 612w,
+			team_bjhsxy_c_scale,w_680.png 680w,
+			team_bjhsxy_c_scale,w_745.png 745w,"
+			src="team_bjhsxy_c_scale,w_459.png"
+			alt="">
+		</div>
+		<div class="mainContent">
+			<h1 class="frg-headline-font-59px header">I'd love to join the team!</h1>
+			<p class="frg-body-font-21px">Let's build amazing products together</p>
+		</div>
+		<div class="contact">
+			<a href="mailto:info@julescode.com" class="contactMe"><button class="frg-button color-green">Contact Me</button></a>
+		</div>
+	</section> <!-- End of thankyou -->
+	
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="public/app.js"></script>
 </body>

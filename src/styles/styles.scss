@@ -2,71 +2,47 @@ article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,summary
 input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer;}button[disabled],input[disabled]{cursor:default;}input[type=checkbox],input[type=radio]{box-sizing:border-box;padding:0;}input[type=search]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box;}input[type=search]::-webkit-search-cancel-button,input[type=search]::-webkit-search-decoration{-webkit-appearance:none;}textarea{overflow:auto;vertical-align:top;}table{border-collapse:collapse;border-spacing:0;}body,figure{margin:0;}legend,button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0;}
 
 //colours
-$blue: rgb(1, 1, 255);
-$red: rgb(246, 0, 3);
-$pink: rgb(250, 0, 255);
-$green: rgb(6, 255, 1);
-$lightBlue: rgb(12, 255, 253);
-$yellow:rgb(255, 255, 1);
-$white:rgb(255, 255, 255);
-$grayMain:rgb(192, 192, 192);
-$grayDarker:rgb(123, 123, 123);
-$grayLightest: rgb(242, 242, 242);
+$purpleTelus: rgb(73, 22, 109);
+$greenTelus:rgb(141, 198, 63);
 
-//fonts
+//ANIMATION
 
-$techProblems: 'VT323', monospace;
-$mainFont:  'Ubuntu', sans-serif;
-
-//GENERAL 
-body{
-	background-color: $grayLightest;
-}
-
-//GAME
-.game{
-	display: flex;
+.note{
+	width:100vw;
+	height:100vh;
+	display:flex;
 	flex-direction:column;
 	justify-content:center;
 	align-items:center;
-	width:100vw;
-	height:100vh;
 }
 
-.gameContainer{
-	width:100%;
-	display: flex;
+.thanks{
+	color:$greenTelus;
+	letter-spacing: 15px;
+	margin:0 0 20px 0;
+	text-align: center;
+}
+
+
+//MAIN
+
+.thankyou{
+	display:none;
 	flex-direction:column;
-	background-color:$grayMain;
+	align-items:center;
+	justify-content:center;
+	text-align:center;
 }
 
 .header{
-	width:100%;
-	background-color: blue;
-	display:flex;
-	flex-direction:row;
-	background-color: $grayMain;
+	color:$purpleTelus;
+	margin:0;
 }
 
-.time, .score, .smile{
-	width:33.33%;
+.mainContent{
+	text-align:center;
 }
 
-.mainContainer{
-	width:50%;
-	font-family: $techProblems;
-	color:$grayDarker;
-}
-
-.mainGame{
-	width:100%;
-	height:300px;
-	background-color:green;
-	background-image: url('../../public/images/b.png');
-}
-
-//MESSAGE
-
-.message{
-	display:none;
+.contactMe{
+	text-decoration: none;
 }

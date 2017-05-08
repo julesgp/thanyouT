@@ -117,10 +117,9 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   border: 0;
   padding: 0; }
 
-body {
-  background-color: #f2f2f2; }
-
-.game {
+.note {
+  width: 100vw;
+  height: 100vh;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-direction: column;
@@ -128,40 +127,30 @@ body {
   -ms-flex-pack: center;
       justify-content: center;
   -ms-flex-align: center;
-      align-items: center;
-  width: 100vw;
-  height: 100vh; }
+      align-items: center; }
 
-.gameContainer {
-  width: 100%;
-  display: -ms-flexbox;
-  display: flex;
+.thanks {
+  color: #8dc63f;
+  letter-spacing: 15px;
+  margin: 0 0 20px 0;
+  text-align: center; }
+
+.thankyou {
+  display: none;
   -ms-flex-direction: column;
       flex-direction: column;
-  background-color: silver; }
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: center;
+      justify-content: center;
+  text-align: center; }
 
 .header {
-  width: 100%;
-  background-color: blue;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-direction: row;
-      flex-direction: row;
-  background-color: silver; }
+  color: #49166d;
+  margin: 0; }
 
-.time, .score, .smile {
-  width: 33.33%; }
+.mainContent {
+  text-align: center; }
 
-.mainContainer {
-  width: 50%;
-  font-family: "VT323", monospace;
-  color: #7b7b7b; }
-
-.mainGame {
-  width: 100%;
-  height: 300px;
-  background-color: green;
-  background-image: url("../../public/images/b.png"); }
-
-.message {
-  display: none; }
+.contactMe {
+  text-decoration: none; }
